@@ -1,0 +1,261 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap");
+* {
+ 
+  /* width: '1669px';
+  height: '964px'; */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  background: lightblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+  
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 1000px;
+  /* min-height: 1000px; */
+  background: #fff;
+  /* margin: 50px; */
+    
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  box-shadow: 0 35px 55px rgba(0, 0, 0, 0.1);
+}
+
+.container .left_side {
+  position: relative;
+  background: #230B0B;
+  /* padding-left: 30px;
+  padding-left: 30px; */
+  padding: 40px;
+}
+.profileText {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.profileText .imgBox {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  /* border-radius: 0%;    round the image*/ 
+  overflow: hidden;
+}
+
+.profileText .imgBox img {
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  
+}
+
+.profileText h2 {
+  color: #fff;
+  font-size: 1.5em;
+  margin-top: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 600;
+  line-height: 1.4em;
+}
+.profileText h2 span {
+  font-size: 0.8em;
+  font-weight: 300;
+}
+
+.contactInfo {
+  padding-top: 40px;
+}
+.title {
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+.contactInfo ul {
+  position: relative;
+}
+.contactInfo ul li {
+  position: relative;
+  list-style: none;
+  margin: 10px 0;
+  cursor: pointer;
+  
+}
+
+.contactInfo ul li .icon {
+  display: inline-block;
+  width: 30px;
+  font-size: 18px;
+  color: #AF601A;
+}
+.contactInfo ul li span {
+  color: #fff;
+  font-weight: 300;
+}
+
+.contactInfo.education h5 {
+  color: #AF601A;
+  font-weight: 500;
+}
+.contactInfo.education h4:nth-child(2) {
+  color: #fff;
+  font-weight: 500;
+}
+.contactInfo.education h4 {
+  color: #fff;
+  font-weight: 300;
+}
+/* Staring right side  */
+
+.container .right_side {
+  position: relative;
+  background: #fff;
+  padding: 40px;
+}
+.about {
+  margin-bottom: 45px;
+}
+.about:last-child {
+  margin-bottom: 0;
+}
+.title2 {
+  color: #003147;
+  text-decoration: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+p {
+  color: #333;
+}
+.about .box {
+  display: flex;
+  flex-direction: row;
+  margin: 20px 0;
+}
+.about .box .year_company {
+  min-width: 150px;
+}
+.about .box .year_company h5 {
+  text-transform: uppercase;
+  color: #848c90;
+  font-weight: 600;
+}
+.about .box .text h4 {
+  text-transform: uppercase;
+  color: #AF601A;
+  font-size: 12px;
+}
+
+.skills .box {
+  position: relative;
+  width: 100%;
+
+  grid-template-columns: 150px 1fr;
+}
+.skills .box .innerBox li {
+  padding-right: 60px;
+  display: inline-block;
+}
+
+.skills .box h4 {
+  text-transform: uppercase;
+  color: #848c99;
+  font-weight: 500;
+}
+#createResume{
+    background-color: rgb(185, 213, 223);
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+#createResume textarea{
+    margin-left: 25%;
+    font-size: 15px;
+    position: relative;
+    width: 50%;
+    font-weight: 600;
+}
+#inside_form {
+    
+    width: 100%;
+}
+
+#createResume h2 {
+    text-align: center;
+    padding-bottom: 40px;
+   }
+.form_Experience{
+    margin-bottom: 100px;
+  
+}
+.form_Experience .inside_form{
+    padding-bottom: 60px;
+}
+#btn{
+    background-color: rgb(96, 175, 240);
+} 
+/* @media screen and (max-width: 500px) {
+    .skills .box .innerBox li {
+        padding-right: 30px;
+        display: inline-block;
+      }
+      
+} */
+@media screen and (max-width: 800px) {
+
+    /* .about .box {
+        flex-direction:  column;
+    } */
+    /* .contactInfo ul li{
+        font-size: 12px;
+    }
+      p{
+          font-size: 13px;
+      }
+      .about .box .year_company{
+          margin-bottom: 5px;
+      } */
+
+      
+
+}
+
+
+.button {
+    margin-top: 60px;
+    margin-left: 40%;
+    margin-bottom: 30px;
+    padding: 16px 42px;
+    box-shadow: 0px 0px 12px -2px rgba(0,0,0,0.5);
+    line-height: 1.25;
+    background: rgb(60, 121, 141);
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+    position: relative;
+    transition: background-color .6s ease;
+    overflow: hidden;
+  
+    }
+  
+ 
